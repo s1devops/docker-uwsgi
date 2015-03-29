@@ -8,4 +8,4 @@ RUN apt-get update && \
 
 VOLUME [/var/run/uwsgi]
 WORKDIR /srv/app
-CMD [uwsgi --ini /srv/app/uwsgi.ini]
+CMD ["uwsgi", "--ini", "/srv/app/uwsgi.ini"]
