@@ -1,8 +1,6 @@
-FROM debian:wheezy
+FROM python:3.4
 RUN apt-get update && \
-    apt-get update && \
-    apt-get install -y python3 python3-pip && \
-    pip-3.2 install uwsgi==2.0.10 && \
+    pip3 install uwsgi==2.0.10 && \
     rm -rf /var/lib/apt/lists/*
 
 
